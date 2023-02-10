@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /*Colors*/
+  --Dark_cyan: hsl(158, 36%, 37%);
+  --Darker_cyan: hsl(156, 44%, 21%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very_dark_blue: hsl(212, 21%, 14%);
+  --Dark_grayish_blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+  /*Margins*/
+  --item-margin: 20px 0;
+  /*Fonts*/
+  --Montserrat: "Montserrat", sans-serif;
+  --Fraunces: "Fraunces", serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--Cream);
+}
+
+.card {
+  display: flex;
+  width: 700px;
+  background-color: var(--White);
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+.main-image {
+  width: 50%;
+  border-radius: 15px 0 0 15px;
+}
+
+.main-image-mobile {
+  display: none;
+}
+
+.content {
+  width: 50%;
+  padding: 40px;
+}
+
+.clasification {
+  color: var(--Dark_grayish_blue);
+  margin: 0;
+  font-family: var(--Montserrat);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.subheader {
+  color: var(--Very_dark_blue);
+  font-family: var(--Fraunces);
+  font-size: 40px;
+  margin: var(--item-margin);
+}
+
+.description {
+  color: var(--Dark_grayish_blue);
+  font-family: var(--Montserrat);
+  font-size: 14px;
+  line-height: 25px;
+  margin: var(--item-margin);
+}
+
+.prices {
+  margin: var(--item-margin);
+  display: flex;
+  align-items: center;
+}
+
+.offer {
+  color: var(--Dark_cyan);
+  font-family: var(--Fraunces);
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+.old-price {
+  text-decoration-line: line-through;
+  color: var(--Dark_grayish_blue);
+}
+
+.button {
+  display: flex;
+  background-color: var(--Dark_cyan);
+  font-family: var(--Montserrat);
+  font-weight: 700;
+  color: var(--White);
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px 0;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--Darker_cyan);
+}
+.cart-icon {
+  margin-right: 10px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --item-margin: 5px 0;
+  }
+  .card {
+    width: 350px;
+    height: 100vh;
+    flex-direction: column;
+  }
+  .main-image {
+    display: none;
+  }
+  .main-image-mobile {
+    display: block;
+    border-radius: 15px 15px 0 0;
+  }
+  .content {
+    width: 100%;
+    padding: 20px;
+  }
+}
