@@ -94,19 +94,19 @@ body {
 .button {
   display: flex;
   background-color: var(--Dark_cyan);
-  font-family: var(--Montserrat);
   font-weight: 700;
-  color: var(--White);
+  justify-content: center;
   cursor: pointer;
   border: none;
   border-radius: 10px;
   width: 100%;
   padding: 20px 0;
-  justify-content: center;
 }
 
 a {
   text-decoration: none;
+  color: var(--White);
+  font-family: var(--Montserrat);
 }
 
 .button:hover {
