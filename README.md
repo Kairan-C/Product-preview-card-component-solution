@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://khyaran.github.io/Product-preview-card-component-solution/)
+- Live Site URL: [https://khyaran.github.io/Product-preview-card-component-solution/](https://khyaran.github.io/Product-preview-card-component-solution/)
 
 ## My process
 
